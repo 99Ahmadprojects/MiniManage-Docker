@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniManage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 MiniManage</h1>
+            <p>Simple Item Management System</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Add New Item</h2>
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="itemInput" 
+                        placeholder="Enter item name..."
+                        maxlength="100"
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="descriptionInput" 
+                        placeholder="Enter item description..."
+                        maxlength="200"
+                    >
+                </div>
+                <button id="addBtn" class="btn btn-primary">Add Item</button>
+            </section>
+
+            <section class="items-section">
+                <h2>Items</h2>
+                <div id="itemsList" class="items-list">
+                    <p class="empty-state">No items yet. Add one to get started!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 MiniManage | Dockerized Management System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
